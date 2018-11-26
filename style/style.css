@@ -1,0 +1,31 @@
+#close-box {
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+    border: 1px dotted black;
+    margin: auto;
+    margin-top: 200px;
+    text-align: center;
+}
+
+#close-button {
+    position: relative;
+    float: right;
+}
+
+.close-anim {
+    animation-name: byebye;
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes byebye{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        transform: translateX(200px) translateY(-200px) scale(.5);
+    }
+}
